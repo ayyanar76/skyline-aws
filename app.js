@@ -1,0 +1,20 @@
+import express from 'express';
+import mongoose from 'mongoose';
+const app = express();
+
+const PORT = 3000;
+
+app.get('/', (req, res) => {
+    res.json({
+ msg:"Hello from Ayyanar"
+});
+});
+
+
+mongoose.connect("mongodb+srv://AYYANAR:OC6M2GzE7YlyQ2Hx@data.5hhsdo6.mongodb.net/LINUX")
+  .then(() => console.log("MongoDB Connected ✅"))
+  .catch(err => console.log(err));
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
