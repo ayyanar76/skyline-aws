@@ -6,7 +6,7 @@ const PORT = 3000;
 
 app.get('/', (req, res) => {
     res.json({
- msg:"Hello from Ayyanar"
+ msg:"Hello from Ayyanar CI & CD"
 });
 });
 

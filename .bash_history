@@ -24,3 +24,18 @@ nano app.js
 pm2 list
 pm2 restart skyline-app
 pm2 logs
+nano app.js
+pm2 restart app.js
+pm2 restart skyline-app
+pm2 li
+pm2 list
+pm2 start app.js --name skyline-app
+pm2 start skyline-app
+sudo yum install nginx -y
+sudo systemctl start nginx
+sudo systemctl start nginx.service
+sudo lsof -i :80
+sudo systemctl stop httpd
+sudo kill -9 80
+sudo kill -9 1529
+sudo systemctl start nginx
