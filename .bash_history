@@ -39,3 +39,13 @@ sudo systemctl stop httpd
 sudo kill -9 80
 sudo kill -9 1529
 sudo systemctl start nginx
+node app.js
+curl http://localhost:3000
+sudo nano /etc/nginx/conf.d/default.conf
+sudo nginx -t
+sudo systemctl restart nginx
+nano app.js
+pm2 restart app.js
+pm2 logs
+sudo yum install certbot python3-certbot-nginx -y
+sudo certbot --nginx
