@@ -7,7 +7,7 @@ const PORT = 3000;
 app.get('/', (req, res) => {
     res.json({
 success:"true",
- msg:"Hello from Ayyanar & The owner of Skyline dev CI & CD next i  start Docker" 
+ msg:"Hello from Ayyanar & The owner of Skyline dev CI & CD " 
 });
 });
 
